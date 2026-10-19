@@ -44,7 +44,7 @@ def post_detail(request, slug):
         PostView.objects.create(user=request.user, post=obj)
     if request.method == "POST":
         form = CommentForm(request.POST)
-        if form.is_valid:
+        if form.is_valid():
             comment = form.save(commit=False)
             comment.user = request.user
             comment.post = obj
