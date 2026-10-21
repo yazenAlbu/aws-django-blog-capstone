@@ -1,10 +1,10 @@
-import json
+﻿import json
 import boto3
 
 def lambda_handler(event, context):
     s3 = boto3.client("s3")
     
-    if event:
+    if event and event.get('Records'):
         print("Event: ", event)
         filename = str(event['Records'][0]['s3']['object']['key'])
         timestamp = str(event['Records'][0]['eventTime'])
