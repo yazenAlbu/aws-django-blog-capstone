@@ -86,10 +86,11 @@ Uploading another object with the same filename can replace the existing item.
 The handler processes the first record in each event, following the instructor's design.
 
 ## Screenshots
-Save supporting screenshots under docs/screenshots:
-- blog-post-created.png
-- dynamodb-event.png
-- maintenance-fallback.png
+Deployment screenshots:
+- [Blog post created](docs/screenshots/blog-post-created.jpg)
+- [DynamoDB event](docs/screenshots/dynamodb-event.jpg)
+
+The maintenance fallback was tested separately; no screenshot is included here.
 
 ## Cleanup
 After documentation is saved, remove the project's AWS resources.
