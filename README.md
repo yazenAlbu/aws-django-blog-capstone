@@ -116,7 +116,9 @@ The bootstrap script expects the AWS resources and permissions to exist. It is i
 
 This is a learning project. Desired capacity 1, a Single-AZ database, and one NAT instance do not provide full multi-AZ availability. Lambda follows the instructor's first-record handler and uses the filename as the DynamoDB key, so duplicate filenames can overwrite an item.
 
-Project resource cleanup is planned after documentation; completion has not yet been verified. Screenshots preserve the deployment results after the lab is removed.
+Project resource cleanup was completed on October 21, 2026. The final AWS inventory returned no project EC2 instances, Auto Scaling groups, load balancers, target groups, RDS databases or manual snapshots, CloudFront distributions, Lambda functions, S3 buckets, DynamoDB tables, IAM roles, launch templates, SNS topics, alarms, log groups, SSM parameters, network interfaces, Elastic IPs, or ACM certificates within the checked scope. The project VPC and WAF ACL were also confirmed absent, and the CloudFront pricing subscription was cancelled.
+
+The application is now offline. The registered domain, hosted zone, shared key pair, and GitHub repository were preserved. Screenshots retain the deployment results.
 
 Do not commit `.env` files, private keys, passwords, or access tokens.
 

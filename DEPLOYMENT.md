@@ -93,8 +93,9 @@ Deployment screenshots:
 The maintenance fallback was tested separately; no screenshot is included here.
 
 ## Cleanup
-After documentation is saved, remove the project's AWS resources.
-Cleanup has not yet been verified.
+Project cleanup completed on October 21, 2026. The final scoped inventory returned empty lists for the project's application, database, storage, compute, IAM, monitoring, certificate, and network-interface resources. Separate checks confirmed that the VPC and WAF ACL no longer existed and that no pricing subscription matched the deleted CloudFront distribution.
+
+The application is offline. This verification covers this project's identified resources in us-east-1 and the identified global resources; it is not an account-wide audit.
 
 Preserve the GitHub repository, local project files, registered domains,
 unrelated AWS resources and the shared linuspass key pair.
